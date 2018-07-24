@@ -1,0 +1,45 @@
+
+
+
+
+
+<div class="block">
+    
+	<button ui-sref="app.home">home</button>   
+
+   <input type="text" ng-model="author">
+
+
+
+   <div infinite-scroll="scrollFunction()" infinite-scroll-distance="1" infinite-scroll-parent="true">
+
+    <div data-ng-repeat="dat in details.results">
+<a href="{{dat.formats['text/plain']}}">
+       
+  
+        <p> {{dat.authors[0].name}}</p>
+        <img src="{{dat.formats['image/jpeg']}}">
+      
+        
+
+      <div>
+
+
+
+
+
+    </div>
+    </a>
+
+</div>
+
+
+
+
+   </div>
+	
+ 
+  
+
+
+</div>
